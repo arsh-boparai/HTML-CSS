@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<!--
+	Theory by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Designs</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<script>
+			$("#location-bar a").click(function(event) {
+  event.preventDefault();
+
+  var $this = $(this),
+    $li = $this.parent(),
+    selectedMap = $this.attr("href"),
+    selectedLocation = $this.data("location");
+
+  $li.addClass("active").siblings("li").removeClass("active");
+
+  //Update #map bkimage with the image from the location
+  $("#map").css("background-image", "url(" + selectedMap + ")");
+  //update tooltip 'address'
+  $(".selectedLocation").text(selectedLocation);
+});
+
+		</script>
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+				<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo">Int<strong>er</strong>ior  </a>
+					<a href="index.html"  style="float: left;
+			   font-size:22px;
+			font-weight: 400; line-height:2.5em;cursor:pointer;letter-spacing:-3px
+			position: relative;color:inherit;text-transform: uppercase;">Designing</a>
+			
+					<nav id="nav">
+					<b style="text-align: center;text-transform: uppercase;text-decoration: none;color: white;position: relative;right:16%;font-weight: 600;line-height: 2em;">Contact Us</b>
+						<a href="index.html">Home</a>
+						<a href="information.html">Information</a>
+						<a href="design.html">Designs</a>
+						
+						<a href="contacts.html">Contact Us</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+		<!-- Three -->
+			
+					
+		<div id='browser'>
+  <div id='browser-bar'>
+   
+    
+  </div>
+  <div id='content'>
+    <div id='left'>
+      <div id='map'>
+        <p>Where To Find Us</p>
+        <div class='map-locator'>
+          <div class='tooltip'>
+            <ul>
+              <li>
+                <span class='entypo-location'></span>
+                <span class='selectedLocation'>Toronto</span>
+              </li>
+              <li>
+                <span class='entypo-mail'></span>
+                <a href='gmail.com'>boparai.arsh3@gmail.com</a>
+              </li>
+              <li>
+                <span class='entypo-phone'></span>
+                (+647) 967 16 72
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class='zoom'></div>
+      </div>
+      <ul id='location-bar'>
+        <li>
+          <a class='location' data-location='India' href='https://goo.gl/maps/gP8DY12rG4P2'>India</a>
+        </li>
+        <li>
+          <a class='location' data-location='USA' href='https://goo.gl/maps/S58yvxUCm1n'>USA</a>
+        </li>
+        <li>
+          <a class='location' data-location='Canada' href='https://goo.gl/maps/DwNQXTc2uGr'>Canada</a>
+        </li>
+        <li>
+          <a class='location' data-location='Singapore' href='https://goo.gl/maps/UR9GKDJkKAt'>Singapore</a>
+        </li>
+      </ul>
+    </div>
+    <div id='right'>
+      <p>Connect</p>
+      <div id='social'>
+        <a class='social'>
+          <span class='entypo-facebook'></span>
+        </a>
+        <a class='social'>
+          <span class='entypo-twitter'></span>
+        </a>
+        <a class='social'>
+          <span class='entypo-linkedin'></span>
+        </a>
+        <a class='social'>
+          <span class='entypo-gplus'></span>
+        </a>
+        <a class='social'>
+          <span class='entypo-instagrem'></span>
+        </a>
+      </div>
+      <form>
+        <p>Get in Contact</p>
+        <input placeholder='Email' type='email'>
+        <input placeholder='Subject' type='text'>
+        <textarea placeholder='Message' rows='4'></textarea>
+        <input placeholder='Send' type='submit'>
+      </form>
+      <p>other way</p>
+      <p class='other entypo-mail'>
+        <a href='#'>boparai.arsh3@gmail.com</a>
+      </p>
+      <p class='other entypo-phone'>(+647) 967 16 72</p>
+    </div>
+  </div>
+</div>
+
+
+					
+		
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="flex">
+						<div class="copyright" style="color: blue;">
+							&copy; Interior Designing. Design By: <a href="#" style="color: blue;">Arshdeep</a>. Images: <a href="https://unsplash.com" style="color: blue;">Unsplash</a>.
+						</div>
+						
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
